@@ -1,23 +1,27 @@
 # Red Team Simulation
 
 ## Description
-Ce projet est une **simulation de Red Team** pour le cours “Compliance et Agentic Finance”.  
-Il met en scène plusieurs agents autonomes (Recon, Attack, AI Attack, Compliance, Risk) qui collaborent pour **identifier et exploiter les vulnérabilités d’un système fictif ARMS**, tout en respectant les contraintes légales et de conformité (GDPR, AI Act).
-
-L’objectif est d’appliquer **les concepts de tests de sécurité et de conformité** dans un environnement simulé, en utilisant une approche **hybride IA + logique d’agents**.
+Ce projet simule une **Red Team IA** qui teste la sécurité, la conformité et les risques d’un système cible.  
+Le projet inclut des agents simulés pour exécuter différentes tâches et produire des rapports.  
+Si le quota OpenAI est dépassé, une fonction hybride simule les réponses des agents.
 
 ---
 
 ## Agents inclus
-- **Recon** : cartographie et identification des failles.
-- **Attack** : exécution d’attaques simulées.
-- **AI Attack** : perturbation des décisions prises par l’IA.
-- **Compliance** : détection des problèmes de conformité.
-- **Risk** : estimation des impacts financiers et réputationnels.
+
+| Agent       | Rôle principal                                           | Description détaillée                                         |
+|------------|---------------------------------------------------------|---------------------------------------------------------------|
+| **Recon**  | Cartographie et identification des failles             | Analyse le système pour détecter les vulnérabilités.        |
+| **Attack** | Exécution d’attaques simulées                           | Injecte des attaques fictives pour tester la résilience.    |
+| **AI Attack** | Perturbation des décisions prises par l’IA           | Simule une corruption ou manipulation des décisions IA.     |
+| **Compliance** | Détection des problèmes de conformité               | Vérifie le respect du RGPD et de l’AI Act.                 |
+| **Risk**   | Estimation des impacts financiers et réputationnels    | Évalue les conséquences potentielles des attaques.          |
 
 ---
 
 ## Installation
-1. Crée un environnement virtuel Python :
+
+1. **Cloner le projet**
 ```bash
-python -m venv venv
+git clone https://github.com/NFL7/redteam-ai.git
+cd redteam-ai
