@@ -40,11 +40,32 @@ Recon → Attack → AI Attack → Compliance → Risk
 
 ## Scénarios simulés  
 
-- **Attaque cyber conventionnelle**  
-  Exemple : manipulation de transactions via API  
+### Scénario A — Attaque Cyber Conventionnelle  
 
-- **Attaque IA / data**  
-  Exemple : data poisoning, biais dans la détection de fraude  
+- Cartographie des APIs externes et des flux crypto  
+- Identification de endpoints non authentifiés  
+- Injection de fausses transactions (~250K€) via API  
+- Contournement des contrôles LCB-FT  
+- Absence de logs d’audit → violation DORA  
+- Aucune détection en temps réel (point de rupture)  
+
+**Impact estimé :**  
+- Perte financière ≈ 1,2M€  
+- Score de risque élevé  
+
+---
+
+### Scénario B — Attaque IA / Data Poisoning  
+
+- Identification du pipeline d’entraînement du modèle  
+- Injection de données corrompues (~1,2%)  
+- Augmentation des faux négatifs en détection de fraude  
+- Absence de documentation et contrôle du modèle (AI Act)  
+- Décisions biaisées sans alerte (point de rupture)  
+
+**Impact estimé :**  
+- Fraudes non détectées ≈ 3,8M€/an  
+- Score de risque critique  
 
 ---
 
