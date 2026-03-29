@@ -1,0 +1,46 @@
+python --version
+mkdir redteam-ai
+cd redteam-ai
+python -m venv venv
+venv\Scripts\activate
+pip install agno groq python-dotenv
+OPENROUTER_API_KEY=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
+explorer .
+python main.py
+explorer .
+python main.py
+python -m pip install openai
+pip show openai
+python main.py
+import os
+from dotenv import load_dotenv
+from openai import OpenAI
+load_dotenv()  # lit le fichier .env
+api_key = os.getenv("OPENAI_API_KEY")
+if not api_key:
+    raise ValueError("La cl‚ API n'a pas ‚t‚ trouv‚e dans .env !")
+client = OpenAI(api_key=api_key)
+def run_agent(prompt):
+    response = client.chat.completions.create(
+        model="mistralai/mistral-7b-instruct",
+        messages=[{"role": "user", "content": prompt}]
+    )
+    return response.choices[0].message.content
+print("\n--- RED TEAM SIMULATION ---\n")
+print("Recon:", run_agent("Find vulnerabilities in ARMS system"))
+print("Attack:", run_agent("Exploit API and inject fake transactions"))
+print("AI Attack:", run_agent("Manipulate fraud detection AI"))
+print("Compliance:", run_agent("Check GDPR violations"))
+print("Risk:", run_agent("Evaluate financial impact"))
+pip show openai
+cd C:\Users\PC\redteam-ai
+python main.py
+pip install openai python-dotenv
+python main.py
+explorer .
+python main.py
+load_dotenv(dotenv_path=r"C:\Users\PC\redteam-ai\.env")
+python main.py
+python main.py > sortie_terminal.txt
+python main.py > sortie_terminal.txt 2>&1
+doskey /history > history_terminal.txt
