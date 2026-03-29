@@ -63,7 +63,7 @@ pip install -r requirements.txt
 Créer un fichier `.env` à la racine du projet :  
 
 ```
-OPENAI_API_KEY=your_api_key_here
+OPENAI_API_KEY=my_api_key
 ```
 
 Si la clé API n’est pas disponible ou si le quota est dépassé, une **simulation hybride** permet de générer des réponses fictives pour les agents.  
