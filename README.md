@@ -54,3 +54,60 @@ Recon → Attack → AI Attack → Compliance → Risk
 git clone https://github.com/NFL7/redteam-ai.git
 cd redteam-ai
 pip install -r requirements.txt
+```
+
+---
+
+## Configuration  
+
+Créer un fichier `.env` à la racine du projet :  
+
+```
+OPENAI_API_KEY=your_api_key_here
+```
+
+Si la clé API n’est pas disponible ou si le quota est dépassé, une **simulation hybride** permet de générer des réponses fictives pour les agents.  
+
+---
+
+## Exécution  
+
+```bash
+python main.py
+```
+
+---
+
+## Exemple de sortie  
+
+```
+--- RED TEAM SIMULATION ---
+
+Recon: Mapping of system vulnerabilities completed.
+Attack: Injection of malicious transactions successful.
+AI Attack: AI model behavior altered.
+Compliance: Regulatory violations detected.
+Risk: High financial and reputational impact identified.
+```
+
+---
+
+## Résultats  
+
+La simulation permet de :  
+- Identifier les vulnérabilités techniques et réglementaires  
+- Tester la robustesse du système ARMS  
+- Mettre en évidence des failles liées à DORA, MiCA et AI Act  
+- Produire un score de risque global  
+
+---
+
+## Lien avec le livrable  
+
+Les résultats détaillés (scénarios, impacts, recommandations) sont présentés dans les diapositives associées au projet.  
+
+---
+
+## Auteur  
+
+Projet réalisé dans le cadre d’un atelier académique sur la sécurité et la conformité des systèmes agentiques.  
